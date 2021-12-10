@@ -1,0 +1,128 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* Base styles */
+*{
+  color: slateblue;
+  background-color: darkslateblue;
+}
+html{
+font-family: "verdana", helvetica , arial, sans-serif;
+font-size: 1.438em; /*23 / 16 = 1.438*/
+line-height: 1.563em; /*25 / 16 = 1.563*/
+}
+h2{
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1.250em; /*20 / 16 = 1.250*/
+}
+h3{
+  font-weight:bolder;
+  padding-bottom: 1.250em; /*20 / 16 = 1.250*/
+  padding-top: 1.250em; /*20 / 16 = 1.250*/
+}
+article{
+  padding-left: 1.250em; /*20 / 16 = 1.250*/
+  padding-right: 1.250em; /*20 / 16 = 1.250*/
+}
+footer{
+  text-align: center;
+  font-size: 0.938em;/*15 / 16 = 0.938*/
+  bottom: 0;
+  background-color: slateblue;
+  color: darkslateblue;
+  padding-bottom: 1.250em; /*20 / 16 = 1.250*/
+  padding-top: 1.250em; /*20 / 16 = 1.250*/
+}
+/* Modular styles */
+#header, h1{
+  padding-top: .345em; /*5 / 16 = .345*/
+  padding-bottom: .345em; /*5 / 16 = .345*/
+  text-align: left;
+  display: grid;
+  font-size: 1.248em; /*19 / 16 = 1.248*/
+  line-height: 1.547em; /*24 / 16 = 1.547*/
+}
+#home-introduction{
+  padding-top: .345em; /*5 / 16 = .345*/
+  padding-bottom: .345em; /*5 / 16 = .345*/
+  text-align: center;
+  display: grid;
+  font-size: 1.248em; /*19 / 16 = 1.248*/
+  line-height: 1.547em; /*24 / 16 = 1.547*/
+}
+#nav {
+  font-family: Verdana, arial, helvetica, sans-serif;
+  font-size: 1.438em; /*23 / 16 = 1.438*/
+  line-height: 2em; /*32 / 16 = 2*/
+  padding-top: 1.250em; /*20 / 16 = 1.250*/
+  padding-bottom: 1.250em; /*20 / 16 = 1.250*/
+}
+#nav li, a {
+  background-color: midnightblue;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+#nav a:hover {
+  background-color: midnightblue;
+}
+#home{
+  padding-top: 1.250em; /*20 / 16 = 1.250*/
+  text-align: center;
+}
+#content{
+text-align: left;
+padding-bottom: 1.250em; /*20 / 16 = 1.250*/
+padding-top: 1.250em; /*20 / 16 = 1.250*/
+}
+#resume-introduction{
+  padding: 1.250em; /*20 / 16 = 1.250*/
+  text-align: center;
+}
+#resume-experience, ul{
+    padding-left: 1.250em; /*20 / 16 = 1.250*/
+    padding-right: 1.250em; /*20 / 16 = 1.250*/
+}
+/* Layout Styles */
+
+/* State and Theme styles */
+@media screen and (min-width: 18.750em) { /*300 / 16 = 18.750*/
+  #nav ul{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #nav li {
+    flex: 1 0 auto;
+}
+@media screen and (min-width: 31.250em) { /*500 / 16 = 31.250*/
+  #nav ul{
+    display: flex;
+  }
+  #nav li {
+    flex: 1 0 auto;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  figure {
+    display: contents;
+    visibility: visible;
+    position: center;
+  }
+
+  figcaption {
+    background: rgba(20,20,20,0.3);
+    bottom: 0px; /* */
+    color: slateblue;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
