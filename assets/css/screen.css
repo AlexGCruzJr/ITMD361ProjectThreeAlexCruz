@@ -8,7 +8,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Base styles */
 *{
-  color: slateblue;
+  color: whitesmoke;
   background-color: darkslateblue;
 }
 html{
@@ -20,11 +20,19 @@ h2{
   font-weight: bold;
   text-align: center;
   padding-top: 1.250em; /*20 / 16 = 1.250*/
+  padding-left: 1.250em; /*20 / 16 = 1.250*/
+  padding-right: 1.250em; /*20 / 16 = 1.250*/
 }
 h3{
   font-weight:bolder;
   padding-bottom: 1.250em; /*20 / 16 = 1.250*/
   padding-top: 1.250em; /*20 / 16 = 1.250*/
+  padding-left: 1.250em; /*20 / 16 = 1.250*/
+  padding-right: 1.250em; /*20 / 16 = 1.250*/
+}
+p{
+  padding-left: 1.250em; /*20 / 16 = 1.250*/
+    padding-right: 1.250em; /*20 / 16 = 1.250*/
 }
 article{
   padding-left: 1.250em; /*20 / 16 = 1.250*/
@@ -34,7 +42,7 @@ footer{
   text-align: center;
   font-size: 0.938em;/*15 / 16 = 0.938*/
   bottom: 0;
-  background-color: slateblue;
+  background-color: whitesmoke;
   color: darkslateblue;
   padding-bottom: 1.250em; /*20 / 16 = 1.250*/
   padding-top: 1.250em; /*20 / 16 = 1.250*/
@@ -43,7 +51,7 @@ footer{
 #header, h1{
   padding-top: .345em; /*5 / 16 = .345*/
   padding-bottom: .345em; /*5 / 16 = .345*/
-  text-align: left;
+  text-align: center;
   display: grid;
   font-size: 1.248em; /*19 / 16 = 1.248*/
   line-height: 1.547em; /*24 / 16 = 1.547*/
@@ -63,6 +71,9 @@ footer{
   padding-top: 1.250em; /*20 / 16 = 1.250*/
   padding-bottom: 1.250em; /*20 / 16 = 1.250*/
 }
+#nav ul{
+  background-color: midnightblue;
+}
 #nav li, a {
   background-color: midnightblue;
   text-decoration: none;
@@ -70,7 +81,7 @@ footer{
   text-align: center;
 }
 #nav a:hover {
-  background-color: midnightblue;
+  background-color: tomato;
 }
 #home{
   padding-top: 1.250em; /*20 / 16 = 1.250*/
@@ -88,6 +99,10 @@ padding-top: 1.250em; /*20 / 16 = 1.250*/
 #resume-experience, ul{
     padding-left: 1.250em; /*20 / 16 = 1.250*/
     padding-right: 1.250em; /*20 / 16 = 1.250*/
+}
+#resume-education, ul{
+  padding-left: 1.250em; /*20 / 16 = 1.250*/
+  padding-right: 1.250em; /*20 / 16 = 1.250*/
 }
 /* Layout Styles */
 
@@ -108,8 +123,9 @@ padding-top: 1.250em; /*20 / 16 = 1.250*/
     flex: 1 0 auto;
   }
   img {
-    display: block;
-    width: 100%;
+    display: flex;
+    width: 60%;
+    justify-self: center;
   }
 
   figure {
@@ -121,7 +137,7 @@ padding-top: 1.250em; /*20 / 16 = 1.250*/
   figcaption {
     background: rgba(20,20,20,0.3);
     bottom: 0px; /* */
-    color: slateblue;
+    color: whitesmoke;
     position: relative;
     text-align: center;
     width: 100%;
