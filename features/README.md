@@ -1,0 +1,1 @@
+In project two, my layout was not that stellar. I added CSS to improve the margins so that it was easier to read on mobile. The image of myself with my girlfriend was too large, so it was centered and made smaller.
